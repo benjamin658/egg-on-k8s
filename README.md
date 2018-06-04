@@ -1,33 +1,12 @@
-# on-k8s
+# egg-on-k8s
 
+Egg.js on Kubernetes app development using Skaffold
 
+## Development
 
-## QuickStart
+Follow the installation steps: https://github.com/GoogleContainerTools/skaffold#installation
 
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+## Start
 ```
-
-### Deploy
-
-```bash
-$ npm start
-$ npm stop
+skaffold dev
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org

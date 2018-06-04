@@ -1,7 +1,12 @@
 FROM node:8.11.2
 
-ENV PORT 7001
-EXPOSE 7001
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY . .
-CMD ["npm", "start"]
+
+COPY package.json /usr/src/app/package.json
+RUN npm install
+COPY . /usr/src/app
+
+EXPOSE 7001
+
+CMD npm start
